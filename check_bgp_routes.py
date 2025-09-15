@@ -9,8 +9,8 @@ def check_bgp_routes():
   devices = {
     "ip": "10.224.80.56",
     "device_type": "cisco_xr",
-    "username": "CERT_EPNM",
-    "password": "ATt)2018(Ius4je5"
+    "username": "username",
+    "password": "***********"
   }
 
   # Connecting to device
@@ -58,5 +58,6 @@ def check_bgp_routes():
     #os.system(f"{javapathsyslog} \"%BGPVPNv4ROUTE-4-BPGVPNv4ROUTEEXCEEDED : Route exceeded the amount of 20000. Value is {sumbgproutes}\" -destinationip 127.0.0.1 -destinationport 514 -sourceip {devices['ip']}")
 
 check_bgp_routes()
+
 
 
